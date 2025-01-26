@@ -6,9 +6,10 @@ type Props = {
   title: string;
   subtitle: string;
   image: string;
+  onLogout: () => void;
 };
 
-export default function DOMUser({ title, subtitle, image }: Props) {
+export default function DOMUser({ title, subtitle, image, onLogout }: Props) {
   return (
     // <View>
     //   <Image
@@ -19,17 +20,20 @@ export default function DOMUser({ title, subtitle, image }: Props) {
     //   <Text style={{ color: '#777' }}>{subtitle}</Text>
     // </View>
 
-    <div style={{ display: 'flex', alignItems: 'center' }}>
+    <div style={{ display: 'flex', alignItems: 'center', flex: 1 }}>
       <img
         src={image}
         alt="Foto do usuário"
-        // style={{ width: 42, height: 42, borderRadius: 50, }}
         className="w-12 h-12 rounded-md"
+        // style={{ width: 42, height: 42, borderRadius: 50, }}
       />
-      <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 8 }}>
-        <span style={{ color: '#000' }}>{title}</span>
-        <span style={{ color: '#777' }}>{subtitle}</span>
+      <div style={{ flex: 1, marginLeft: 8 }}>
+        <h2 style={{ color: '#000' }}>{title}</h2>
+        <h2 style={{ color: '#777' }}>{subtitle}</h2>
       </div>
+      <button
+        onClick={() => onLogout()}
+        style={{ backgroundColor: "transparent", color: '#FF0000' }}>Sair</button>
     </div>
   )
 };
