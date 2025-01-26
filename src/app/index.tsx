@@ -5,7 +5,8 @@ export default function Index() {
   return (
     <View style={{ flex: 1, padding: 32 }}>
       <DOMUser
-        name="Ricardo Cardoso"
+        title="Ricardo Cardoso"
+        subtitle="Desenvovedor Web/Mobile"
         image="https://github.com/ricardocardoso90.png"
       />
     </View>
