@@ -6,7 +6,7 @@ export default function Index() {
     <View style={{ flex: 1, padding: 24 }}>
       <DOMUser
         title="Ricardo Cardoso"
-        subtitle="Desenvovedor Web/Mobile"
+        subtitle="Desenvovedor Front-End"
         image="https://github.com/ricardocardoso90.png"
         onLogout={() => Alert.alert("Deseja realmente sair?")}
       />
