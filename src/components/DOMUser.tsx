@@ -25,7 +25,7 @@ export default function DOMUser({ title, subtitle, image, onLogout }: Props) {
         src={image}
         alt="Foto do usuário"
         className="w-12 h-12 rounded-md"
-        // style={{ width: 42, height: 42, borderRadius: 50, }}
+      // style={{ width: 42, height: 42, borderRadius: 50, }}
       />
       <div style={{ flex: 1, marginLeft: 8 }}>
         <h2 style={{ color: '#000' }}>{title}</h2>
